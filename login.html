@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+    div{
+        background-color: pink;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        word-spacing: 20px;
+    }
+              
+    .bg{
+     border: 5px white;
+     margin-left: -100px;
+     display: flex;
+     justify-content: center;
+     background-image: url('images/choco.jpg');
+     height:600px;
+     Width: 2400px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+</style>
+
+
+</head>
+<body>
+    <header>
+        <div class="header-2">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="navbar">
+                <div>
+                <a href="home.html" class="btn" role="button" style="border: pink;" >HOME</a>
+                <a href="register.html" class="btn btn-info" role="button" style="border: pink;" >ACCOUNT CREATION</a>
+                <a href="login.html" class="btn btn-info" role="button" style="border: pink;">LOGIN</a>
+                <a href="gift.html" class="btn btn-info" role="button" style="border: pink;">GIFTS</a>
+                <a href="customize.html" class="btn btn-info" role="button" style="border: pink;" >CUSTOMIZE</a>
+                <a href="contact.html" class="btn btn-info" role="button" style="border: pink;" >CONTACT US</a>
+                </div>
+            </nav>    
+        </div>
+    
+    </header>
+       
+
+        <div class="bg">
+            
+        <form name="myForm" action="loginsuccess.html" method="post">
+
+            <h1 align="center"><strong>LOGIN HERE...</strong></h1>
+          <p><strong> Username :</strong>                
+            <input type="text" name="Username" required>
+          </p>
+          
+          <p><strong>Password</strong>         
+              <input type = "password" name="password" required>
+          </p>
+
+          <p>
+               <strong><input type="submit" value="SUBMIT"></strong>
+            </p>
+
+            <div>
+                <p class="mb-0 pt-3"><strong>Don't have an account?</strong><a href="register.html" class="text-dark-50 fw-bold"><strong>  Sign Up</strong></a>
+                    <p><strong>forget your password </strong><a href="#"><string>click here</string></a></p>
+                </p>
+              </div>
+            
+        </form>
+    </div>
+    </body>
+</html>

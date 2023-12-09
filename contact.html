@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>bootstrap.com</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            body {
+                background-image:url('images/ballon.jpg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;                
+            }  
+            div {
+                background-color:pink;
+                color: rgb(220, 22, 22);
+                padding-top: 40px;
+                padding-bottom: 40px;
+                font-size: 20px;
+                word-spacing: 30px;
+                }
+            a:link{
+                color:white;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            a:hover{
+                color: rgb(0, 255, 38);
+                text-decoration: none;
+            }  
+            a:visited{
+                color:white;
+                text-decoration: none;
+            } 
+            .bg{
+                text-align: center;
+                word-spacing: 10px;
+                display: inline;
+            }    
+            </style>
+        </head>
+        <body>
+            <nav class="navbar">
+                <div>
+                    <a href="home.html" class="btn" role="button" >HOME</a>
+                    <a href="register.html" class="btn" role="button">ACCOUNT-CREATION</a>
+                    <a href="login.html" class="btn" role="button">LOGIN</a>
+                    <a href="gift.html" class="btn" role="button">GIFTS</a>
+                    <a href="customize.html" class="btn" role="button">CUSTOMIZE</a>
+                    <a href="contact.html" class="btn" role="button">CONTACT-US</a>
+                </div>
+            </nav>
+            <div class="bg">
+                <form action="contactsuccess.html">
+                    <h1 text-align="center"><strong>CONTACT US</strong></h1>
+                    <p><strong>Name     :</strong>
+                        <input type= "text" name="fname">  
+                    </p>                
+                    <p><strong>Phone number :</strong>
+                        <input type="tel" name="phone" pattern="^\d{10}$" required>
+                    </p>
+                    <p><strong>Email                :</strong>
+                        <input type="email" name="Email" required>
+                    </p>        
+                    <p><strong>Message:</strong>
+                    </p>  
+                    <p>
+                        <textarea placeholder="message" name="" id="" cols="50" rows="10" style="border:3px solid #0ef722"></textarea>        
+                    </p>                  
+                    <p>
+                        <strong><input type="submit" value="SEND"></strong>                        
+                    </p>                
+                </form>
+            </div>
+            </body>
+        </html>
